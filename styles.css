@@ -13,6 +13,7 @@ body {
     margin: 0;
     background-image: url(colback.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
   }
   
   .calculator {
