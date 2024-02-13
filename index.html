@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="icon" href="cal.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <h2>Calculator</h2>
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+      <button onclick="clearDisplay()" style="background-color: rgb(209, 103, 32);">A/C</button>
+      <button class="operator onclick="toggleSign()">+/-</button>
+      <button class="operator" onclick="appendPercentage()">%</button>
+      <button class="operator" onclick="appendToDisplay('/')">/</button>
+      <button onclick="appendToDisplay('7')" style="background-color: rgb(187, 180, 180);">7</button>
+      <button onclick="appendToDisplay('8')" style="background-color: rgb(187, 180, 180);">8</button>
+      <button onclick="appendToDisplay('9')" style="background-color: rgb(187, 180, 180);">9</button>
+      <button class="operator" onclick="appendToDisplay('*')">*</button>
+      <button onclick="appendToDisplay('4')" style="background-color: rgb(187, 180, 180);">4</button>
+      <button onclick="appendToDisplay('5')" style="background-color: rgb(187, 180, 180);">5</button>
+      <button onclick="appendToDisplay('6')" style="background-color: rgb(187, 180, 180);">6</button>
+      <button class="operator" onclick="appendToDisplay('-')">-</button>
+      <button onclick="appendToDisplay('1')" style="background-color: rgb(187, 180, 180);">1</button>
+      <button onclick="appendToDisplay('2')" style="background-color: rgb(187, 180, 180);">2</button>
+      <button onclick="appendToDisplay('3')" style="background-color: rgb(187, 180, 180);">3</button>
+      <button class="operator" onclick="appendToDisplay('+')">+</button>
+      <button id="zero" onclick="appendToDisplay('0')" style="background-color: rgb(187, 180, 180);">0</button>
+      <button onclick="appendToDisplay('.')" style="background-color: rgb(187, 180, 180);">.</button>
+      <button onclick="calculate()" style="background-color: aqua; color:black">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
